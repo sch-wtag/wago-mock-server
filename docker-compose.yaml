@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  tcpcoupler:
+    build: ./tcpCoupler
+    ports:
+      - "3001:3001"
+
+  httpserver:
+    build: ./httpServer
+    ports:
+      - "3002:3002"
